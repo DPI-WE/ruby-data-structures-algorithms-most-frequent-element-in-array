@@ -3,9 +3,9 @@
 ## The problem
 Write a method that:
 
-Takes an array of integers as input.
-Returns the most frequently occurring element in the array.
-If there are multiple elements that appear a maximum number of times, return any one of them.
+- Takes an array of integers as input.
+- Returns the most frequently occurring element in the array.
+- If there are multiple elements that appear a maximum number of times, return any one of them.
 
 ## Understand the Problem
 Let's warm up with a simpler task to become comfortable with frequency analysis in an array.
