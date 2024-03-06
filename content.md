@@ -41,6 +41,52 @@ puts most_frequent_element(array)
 ```
 {: .repl #most_frequent_element title="Find the Most Frequent Element" readonly_lines="[1,2,3,4,5,6]"}
 
+```ruby
+describe "Most Frequent Element" do
+  it "returns 3 for the array [1, 3, 2, 3, 4, 3]" do
+    expect(most_frequent_element([1, 3, 2, 3, 4, 3])).to eq(3)
+  end
+end
+```
+{: .repl-test #most_frequent_element_test_1 title="returns 3 for the array [1, 3, 2, 3, 4, 3]" points="1"}
+
+```ruby
+describe "Most Frequent Element" do
+  it "returns 10 for the array [10, 9, 8, 10, 10]" do
+    expect(most_frequent_element([10, 9, 8, 10, 10])).to eq(10)
+  end
+end
+```
+{: .repl-test #most_frequent_element_test_2 title="returns 10 for the array [10, 9, 8, 10, 10]" points="1"}
+
+```ruby
+describe "Most Frequent Element" do
+  it "returns either 5 or 6 for the array [5, 5, 5, 6, 6, 6, 7], demonstrating handling of ties" do
+    result = most_frequent_element([5, 5, 5, 6, 6, 6, 7])
+    expect([5, 6]).to include(result)
+  end
+end
+```
+{: .repl-test #most_frequent_element_test_3 title="returns either 5 or 6 for the array [5, 5, 5, 6, 6, 6, 7], demonstrating handling of ties" points="1"}
+
+```ruby
+describe "Most Frequent Element" do
+  it "returns nil for an empty array, demonstrating edge case handling" do
+    expect(most_frequent_element([])).to eq(nil)
+  end
+end
+```
+{: .repl-test #most_frequent_element_test_4 title="returns nil for an empty array, demonstrating edge case handling" points="1"}
+
+```ruby
+describe "Most Frequent Element" do
+  it "returns the sole element for a single-element array" do
+    expect(most_frequent_element([42])).to eq(42)
+  end
+end
+```
+{: .repl-test #most_frequent_element_test_5 title="returns the sole element for a single-element array" points="1"}
+
 ## Tips and Clues for Solving the Problem
 - **Hash**: Use a hash to count the occurrences of each element. This method is efficient for tracking frequency.
 - **Increment**: Increase the count of each element in the hash as you iterate through the array.
