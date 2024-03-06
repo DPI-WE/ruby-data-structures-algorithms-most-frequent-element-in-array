@@ -48,7 +48,7 @@ describe "Most Frequent Element" do
   end
 end
 ```
-{: .repl-test #most_frequent_element_test_1 title="returns 3 for the array [1, 3, 2, 3, 4, 3]" points="1"}
+{: .repl-test #most_frequent_element_test_1 for="most_frequent_element" title="returns 3 for the array [1, 3, 2, 3, 4, 3]" points="1"}
 
 ```ruby
 describe "Most Frequent Element" do
@@ -57,7 +57,7 @@ describe "Most Frequent Element" do
   end
 end
 ```
-{: .repl-test #most_frequent_element_test_2 title="returns 10 for the array [10, 9, 8, 10, 10]" points="1"}
+{: .repl-test #most_frequent_element_test_2 for="most_frequent_element" title="returns 10 for the array [10, 9, 8, 10, 10]" points="1"}
 
 ```ruby
 describe "Most Frequent Element" do
@@ -67,7 +67,7 @@ describe "Most Frequent Element" do
   end
 end
 ```
-{: .repl-test #most_frequent_element_test_3 title="returns either 5 or 6 for the array [5, 5, 5, 6, 6, 6, 7], demonstrating handling of ties" points="1"}
+{: .repl-test #most_frequent_element_test_3 for="most_frequent_element" title="returns either 5 or 6 for the array [5, 5, 5, 6, 6, 6, 7], demonstrating handling of ties" points="1"}
 
 ```ruby
 describe "Most Frequent Element" do
@@ -76,7 +76,7 @@ describe "Most Frequent Element" do
   end
 end
 ```
-{: .repl-test #most_frequent_element_test_4 title="returns nil for an empty array, demonstrating edge case handling" points="1"}
+{: .repl-test #most_frequent_element_test_4 for="most_frequent_element" title="returns nil for an empty array, demonstrating edge case handling" points="1"}
 
 ```ruby
 describe "Most Frequent Element" do
@@ -85,7 +85,7 @@ describe "Most Frequent Element" do
   end
 end
 ```
-{: .repl-test #most_frequent_element_test_5 title="returns the sole element for a single-element array" points="1"}
+{: .repl-test #most_frequent_element_test_5 for="most_frequent_element" title="returns the sole element for a single-element array" points="1"}
 
 ## Tips and Clues for Solving the Problem
 - **Hash**: Use a hash to count the occurrences of each element. This method is efficient for tracking frequency.
