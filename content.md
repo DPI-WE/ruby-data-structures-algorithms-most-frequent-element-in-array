@@ -1,4 +1,4 @@
-# Find the Most Frequent Element in an Array
+# Find the Most Frequent Element in an Array 🕵️
 
 ## The problem
 Write a method that:
