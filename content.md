@@ -12,7 +12,7 @@ Let's warm up with a simpler task to become comfortable with frequency analysis 
 
 - Consider the array [1, 2, 3, 2]. Identify the most frequently occurring element.
 - 1
- - Not quite. 1 only occurs once. Is there another more frequent element?
+  - Not quite. 1 only occurs once. Is there another more frequent element?
 - 2
   - That's right! The element 2 occurs twice in this array.
 - 3
@@ -69,3 +69,6 @@ puts most_frequent_element(array)
 - Any of the above, depending on the implementation
   - Correct! The best approach depends on the specific requirements of your application and how you want to handle edge cases.
 {: .choose_best #handle_empty_array title="How should your function handle an empty array?" points="1" answer="4" }
+
+## Conclusion
+In this lesson, we've tackled the challenge of finding the most frequent element in an array using hash maps for counting and array traversal. By breaking down the problem, employing a strategic approach with hash maps, and addressing edge cases, you
