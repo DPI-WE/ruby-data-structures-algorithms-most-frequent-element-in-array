@@ -87,6 +87,20 @@ end
 ```
 {: .repl-test #most_frequent_element_test_5 for="most_frequent_element" title="returns the sole element for a single-element array" points="1"}
 
+```ruby
+describe "Most Frequent Element" do
+  it "efficiently handles a very large array, suggesting O(n) time complexity" do
+    large_array = Array.new(100000) { rand(1..100) } # Large array with random elements
+    start_time = Time.now
+    result = most_frequent_element(large_array)
+    end_time = Time.now
+    elapsed_time = end_time - start_time
+    expect(elapsed_time).to be < 1 # Expect the operation to complete quickly for an O(n) solution
+  end
+end
+```
+{: .repl-test #most_frequent_element_test_6 for="most_frequent_element" title="efficiently handles a very large array, suggesting O(n) time complexity" points="1"}
+
 ## Tips and Clues for Solving the Problem
 - **Hash**: Use a hash to count the occurrences of each element. This method is efficient for tracking frequency.
 - **Increment**: Increase the count of each element in the hash as you iterate through the array.
