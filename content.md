@@ -1,5 +1,7 @@
 # Find the Most Frequent Element in an Array 🕵️
 
+### [Here is a video for this lesson](https://www.youtube.com/watch?v=EXN6GsXpUH0)
+
 ## The problem
 Write a method that:
 
